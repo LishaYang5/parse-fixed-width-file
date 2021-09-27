@@ -1,10 +1,7 @@
-FROM python:3.7-alpine
+FROM python:3.8.8
+ADD . /app
 WORKDIR /app
 COPY app .
-RUN pip install -r requirements.txt
-
-RUN python -m unittest -v
-
-EXPOSE 8080
-ENTRYPOINT ["python"]
-CMD ["parser.py"]
+RUN pip install --upgrade pip
+RUN pip install --no-cache-dir -r requirements.txt
+CMD ["parser.py", "/app/parser.py"]
