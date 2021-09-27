@@ -10,4 +10,4 @@ RUN python -m unittest -v
 
 EXPOSE 8080
 ENTRYPOINT ["python"]
-CMD ["parser.py"]
+CMD ["testParser.py"]
