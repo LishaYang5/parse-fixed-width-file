@@ -1,9 +1,9 @@
 '''
-Author: your name
+Author: Lisha Yang
 Date: 2021-09-28 04:05:05
-LastEditTime: 2021-09-28 05:51:05
-LastEditors: Please set LastEditors
-Description: In User Settings Edit
+Description: Create an object that operates like a regular reader
+            but maps the information in each row to a 
+            dict whose keys are given by the optional fieldnames parameter.
 FilePath: /parse-fixed-width-file/app/core/get_file.py
 '''
 import csv

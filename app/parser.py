@@ -1,9 +1,8 @@
 '''
-Author: your name
+Author: Lisha Yang
 Date: 2021-09-28 03:54:43
-LastEditTime: 2021-09-28 05:59:52
-LastEditors: Please set LastEditors
-Description: In User Settings Edit
+LastEditTime: 2021-09-28 15:06:30
+Description: Build a parser to parse test data and source data(csv_par.csv)
 FilePath: /parse-fixed-width-file/parser.py
 '''
 import csv
@@ -11,7 +10,7 @@ from core import get_csv
 
 def parser(sampledata):
     # Get source data 
-    fileName='csv_dct.csv'
+    fileName='csv_par.csv'
     parfile = get_csv.getCsv(csv_file=fileName)
     header = list(parfile[0].keys())
 
