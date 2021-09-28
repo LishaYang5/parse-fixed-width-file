@@ -1,14 +1,14 @@
 '''
 Author: Lisha Yang
 Date: 2021-09-28 13:15:14
-LastEditTime: 2021-09-28 17:33:26
+LastEditTime: 2021-09-28 23:29:49
 Description: The access of the app
 FilePath: /parse-fixed-width-file/app/main.py
 '''
 import sys
 sys.path.append("..")
 for i in sys.path:
-     print(i)
+    print(i)
 import csv
 from core import get_csv
 from src import generate_csv
