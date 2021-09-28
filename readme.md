@@ -24,8 +24,15 @@
 
 ## Main Process
 
-1. Use 'src/generate_csv.py' to generate csv file.
-2. Use 'app/testParser.py' to test the parser
+1. Use 'main.py' to generate csv file and use 'test.csv' file to test the parser and get the parsed csv file
+2. The 'parser.py' would parse test.csv and csv_par.csv. 
+3. If the length of column in test.csv is longer than that in csv_par.csv, the length would be cut into the same column to match the same length in csv_par.csv. 
+4. If the length of column in test.csv is shorter than that in csv_par.csv, the length would be added addtional value('*') into the same column to match the same length in csv_par.csv.
+
+## Limitation and future work
+
+1. The data in test.csv has just one row. It could be add more values in the future.
+2. All values in each column are predefined as string type. They could be more types like list, int, dictionary.
 
 ## Version
 

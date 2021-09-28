@@ -1,7 +1,7 @@
 '''
 Author: your name
 Date: 2021-09-28 13:15:14
-LastEditTime: 2021-09-28 13:39:16
+LastEditTime: 2021-09-28 13:46:58
 LastEditors: Please set LastEditors
 Description: In User Settings Edit
 FilePath: /parse-fixed-width-file/app/main.py
@@ -22,5 +22,9 @@ def main(fileName):
     testParser.testParser(testCsv=fileName)
     
 if __name__ == '__main__':
+    # Generate csv file
+    generate_csv.geneCsv()
+    
+    # Use test csv file to test parser and generete a parsed file
     fileName = 'test.csv'
     main(fileName)
