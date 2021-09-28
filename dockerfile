@@ -3,11 +3,8 @@ WORKDIR /app
 COPY app .
 
 RUN pip install --upgrade pip
-RUN pip freeze > requirements.txt
-RUN pip install -r requirements.txt
-
-RUN python -m unittest -v
+#RUN pip install -r requirements.txt
 
 EXPOSE 8080
 ENTRYPOINT ["python"]
-CMD ["testParser.py"]
+CMD ["main.py"]
