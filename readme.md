@@ -30,10 +30,11 @@
 4. If the length of column in test.csv is shorter than that in csv_par.csv, the length would be added addtional value('*') into the same column to match the same length in csv_par.csv.
 
 ## Use Docker
-1. Docker build image
-docker build -t par .
-2. Run docker 
-docker run -p 8080:8080 -v ./parse-fixed-width-file/app:/app -it par
+1. Remove parsed_csv.csv and csv_par.csv
+2. Docker build image
+  'docker build -t par .'
+3. Run docker 
+  'docker run -p 8080:8080 -v <local path>/parse-fixed-width-file/app:/app -it par'
 
 
 
