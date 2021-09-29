@@ -1,8 +1,11 @@
-FROM python:3.8
+FROM python:3.8-bullseye
 
-COPY app .
 WORKDIR /app
+COPY app ..
 
-VOLUME [ "/dataVolumeContainer1","/dataVolumeContainer2" ]
+VOLUME [ "/app1","/app" ]
 EXPOSE 8080
 
+ENTRYPOINT ["python3"]
+
+CMD ["main.py"]
