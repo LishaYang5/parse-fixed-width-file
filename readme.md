@@ -34,9 +34,8 @@
 2. Docker build image: 
   'docker build -t par .'
 3. Run docker:  
-  'docker run -p 8080:8080 -v <local path>/parse-fixed-width-file/app:/app -it par'
-
-
+  'docker run -p 8080:8080 -v (your local path to the folder)/parse-fixed-width-file/app:/app -it par'
+4. CD into your local 'app' folder, you will find 'parsed_csv.csv' and 'csv_par.csv'.
 
 ## Limitation and future work
 
