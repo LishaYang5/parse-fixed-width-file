@@ -1,7 +1,8 @@
 FROM python:3.8-bullseye
 
-COPY app .
 WORKDIR /app
+COPY app .
+
 
 VOLUME [ "/app","/app" ]
 EXPOSE 8080
