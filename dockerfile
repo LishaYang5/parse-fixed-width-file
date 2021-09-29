@@ -3,7 +3,7 @@ FROM python:3.8-bullseye
 COPY app .
 WORKDIR /app
 
-VOLUME [ "/dataVolumeContainer1","/dataVolumeContainer2" ]
+VOLUME [ "/app","/app" ]
 EXPOSE 8080
 ENTRYPOINT ["python3"]
 CMD ["main.py"]
