@@ -19,7 +19,7 @@
 
 1. `src/` folder contains the function to generate a csv file based on the requirement of width.
 2. `core/`folder contains funtion to get `csv_dct.csv` file, which is the required file template.
-3. `app` folder contains functions to parse data(`parser.py`) and test the parser(`testParser`).
+3. `app` folder contains functions to parse data(`parser.py`) and test the parser(`testParser.py`).
 4. `parsed.csv` is generated automatically after run `testParser.py`.
 
 ## Main Process
