@@ -12,30 +12,30 @@
 
 ## Assumptions
 
-1. Column names are "f1","f2","f3","f4","f5","f6","f7","f8","f9","f10"
+1. Column names are ` "f1","f2","f3","f4","f5","f6","f7","f8","f9","f10"`
 2. Values in colums are string
 
 ## Files
 
-1. 'src' folder contains the function to generate a csv file based on the requirement of width.
-2. 'core' folder contains funtion to get 'csv_dct.csv' file, which is the required file template.
-3. 'app' folder contains functions to parse data(parser.py) and test the parser(testParser).
-4. 'parsed.csv' is generated automatically after run 'testParser.py'.
+1. `src/` folder contains the function to generate a csv file based on the requirement of width.
+2. `core/`folder contains funtion to get `csv_dct.csv` file, which is the required file template.
+3. `app` folder contains functions to parse data(`parser.py`) and test the parser(`testParser`).
+4. `parsed.csv` is generated automatically after run `testParser.py`.
 
 ## Main Process
 
-1. Use 'main.py' to generate csv file and use 'test.csv' file to test the parser and get the parsed csv file
-2. The 'parser.py' would parse test.csv and csv_par.csv. 
-3. If the length of column in test.csv is longer than that in csv_par.csv, the length would be cut into the same column to match the same length in csv_par.csv. 
-4. If the length of column in test.csv is shorter than that in csv_par.csv, the length would be added addtional value('*') into the same column to match the same length in csv_par.csv.
+1. Use `main.py`to generate csv file and use `test.csv` file to test the parser and get the parsed csv file
+2. The `parser.py` would parse `test.csv` and `csv_par.csv`. 
+3. If the length of column in `test.csv` is longer than that in `csv_par.csv`, the length would be cut into the same column to match the same length in `csv_par.csv`. 
+4. If the length of column in `test.csv` is shorter than that in `csv_par.csv`, the length would be added addtional value(`'*'`) into the same column to match the same length in `csv_par.csv`.
 
 ## Use Docker
-1. Remove parsed_csv.csv and csv_par.csv
+1. Remove `parsed_csv.csv` and `csv_par.csv`
 2. Docker build image: 
-  'docker build -t par .'
+  `docker build -t par .`
 3. Run docker container:  
-  'docker run -p 8080:8080 -v (your local path to the folder)/parse-fixed-width-file/app:/app -it par'
-4. Get into your local 'app' folder, you will find 'parsed_csv.csv' and 'csv_par.csv' are added.
+  `docker run -p 8080:8080 -v (your local path to the folder)/parse-fixed-width-file/app:/app -it par`
+4. Get into your local `app/` folder, you will find `parsed_csv.csv` and `csv_par.csv` are added.
 
 ## Limitation and future work
 
