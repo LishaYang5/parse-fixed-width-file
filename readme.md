@@ -31,9 +31,9 @@
 
 ## Use Docker
 1. Remove parsed_csv.csv and csv_par.csv
-2. Docker build image
+2. Docker build image: 
   'docker build -t par .'
-3. Run docker 
+3. Run docker:  
   'docker run -p 8080:8080 -v <local path>/parse-fixed-width-file/app:/app -it par'
 
 
