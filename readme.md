@@ -33,9 +33,9 @@
 1. Remove parsed_csv.csv and csv_par.csv
 2. Docker build image: 
   'docker build -t par .'
-3. Run docker:  
+3. Run docker container:  
   'docker run -p 8080:8080 -v (your local path to the folder)/parse-fixed-width-file/app:/app -it par'
-4. CD into your local 'app' folder, you will find 'parsed_csv.csv' and 'csv_par.csv'.
+4. Get into your local 'app' folder, you will find 'parsed_csv.csv' and 'csv_par.csv' are added.
 
 ## Limitation and future work
 
